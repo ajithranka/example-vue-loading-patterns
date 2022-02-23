@@ -23,6 +23,9 @@ data.value = await fetchData({ delay: props.delay, index: props.index })
 
 <template>
   <BaseCard>
-    <BaseContent :data="data" />
+    <BaseStack space="lg">
+      <BaseContent :data="data" />
+      <slot />
+    </BaseStack>
   </BaseCard>
 </template>

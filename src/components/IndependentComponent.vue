@@ -5,6 +5,7 @@ import BaseCard from '@/components/BaseCard.vue'
 import BaseContent from '@/components/BaseContent.vue'
 import BaseContentError from '@/components/BaseContentError.vue'
 import BaseContentSkeleton from '@/components/BaseContentSkeleton.vue'
+import BaseStack from '@/components/BaseStack.vue'
 import { fetchData } from '@/api'
 
 const props = defineProps({
@@ -38,6 +39,11 @@ onMounted(async () => {
   <BaseCard>
     <BaseContentSkeleton v-if="isLoading" />
     <BaseContentError v-else-if="error" :error="error" />
-    <BaseContent v-else :data="data" />
+    <template v-else>
+      <BaseStack space="lg">
+        <BaseContent :data="data" />
+        <slot />
+      </BaseStack>
+    </template>
   </BaseCard>
 </template>

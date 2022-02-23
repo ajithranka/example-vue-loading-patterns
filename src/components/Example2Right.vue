@@ -9,9 +9,9 @@ import SuspendableComponent from '@/components/SuspendableComponent.vue'
   <SuspendableComponent :delay="3" :index="1" />
 
   <Suspense>
-    <SuspendableComponent :delay="5" :index="2" />
+    <SuspendableComponent :delay="5" :index="2" variant="depressed" />
     <template #fallback>
-      <BaseCard>
+      <BaseCard variant="depressed">
         <BaseContentSkeleton />
       </BaseCard>
     </template>

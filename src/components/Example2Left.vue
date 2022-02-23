@@ -5,5 +5,5 @@ import SuspendableComponent from '@/components/SuspendableComponent.vue'
 <template>
   <SuspendableComponent :delay="1" :index="0" />
   <SuspendableComponent :delay="3" :index="1" />
-  <SuspendableComponent :delay="5" :index="2" />
+  <SuspendableComponent :delay="5" :index="2" variant="depressed" />
 </template>

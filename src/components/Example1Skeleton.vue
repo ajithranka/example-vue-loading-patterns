@@ -12,7 +12,7 @@ import BaseStack from '@/components/BaseStack.vue'
     <BaseCard>
       <BaseContentSkeleton />
     </BaseCard>
-    <BaseCard>
+    <BaseCard variant="depressed">
       <BaseContentSkeleton />
     </BaseCard>
   </BaseStack>

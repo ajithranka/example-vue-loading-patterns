@@ -1,25 +1,20 @@
 <script setup>
 import BaseFrame from '@/components/BaseFrame.vue'
-import Example2Left from '@/components/Example2Left.vue'
-import Example2Right from '@/components/Example2Right.vue'
-import Example2Skeleton from '@/components/Example2Skeleton.vue'
+import Example3Left from '@/components/Example3Left.vue'
+import Example3Right from '@/components/Example3Right.vue'
+import Example3Skeleton from '@/components/Example3Skeleton.vue'
 </script>
 
 <template>
   <div :class="$style.container">
     <BaseFrame>
-      <Suspense>
-        <Example2Left />
-        <template #fallback>
-          <Example2Skeleton />
-        </template>
-      </Suspense>
+      <Example3Left />
     </BaseFrame>
     <BaseFrame>
       <Suspense>
-        <Example2Right />
+        <Example3Right />
         <template #fallback>
-          <Example2Skeleton />
+          <Example3Skeleton />
         </template>
       </Suspense>
     </BaseFrame>
