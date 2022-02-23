@@ -13,6 +13,7 @@
   --color-mid-gray: #555;
   --color-white: #ffffff;
   --color-near-white: #f7f7f8;
+  --color-dark-blue: #00449e;
 
   --spacing-none: 0;
   --spacing-xs: 0.25rem;
@@ -23,17 +24,13 @@
   --spacing-2xl: 8rem;
   --spacing-3xl: 16rem;
 
+  --scale-xs: 0.75rem;
+  --scale-sm: 0.875rem;
   --scale-md: 1rem;
   --scale-lg: 1.25rem;
   --scale-xl: 1.5rem;
   --scale-2xl: 2.25rem;
   --scale-3xl: 3rem;
-
-  --width-md: 1rem;
-  --width-lg: 2rem;
-  --width-xl: 4rem;
-  --width-2xl: 8rem;
-  --width-3xl: 16rem;
 }
 
 *,
@@ -51,7 +48,22 @@ body {
   line-height: 1.5;
   background: var(--color-black);
   color: var(--color-white);
-  padding: 2rem;
-  max-width: 700px;
-  border: 1px solid red;
+  padding: 1rem;
+  max-width: 42.5rem;
+}
+
+a {
+  color: var(--color-near-white);
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+a:hover,
+a:focus {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+
+button {
+  font: inherit;
 }

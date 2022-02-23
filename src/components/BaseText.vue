@@ -17,7 +17,8 @@ defineProps({
   scale: {
     type: String,
     default: 'md',
-    validator: (value) => ['md', 'lg', 'xl', '2xl', '3xl'].includes(value),
+    validator: (value) =>
+      ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'].includes(value),
   },
   weight: {
     type: Number,
@@ -48,5 +49,6 @@ defineProps({
   font-family: var(--family);
   font-size: var(--scale);
   font-weight: var(--weight);
+  color: inherit;
 }
 </style>

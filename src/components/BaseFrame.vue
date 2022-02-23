@@ -1,14 +1,20 @@
+<script setup>
+import BaseStack from '@/components/BaseStack.vue'
+</script>
+
 <template>
   <div :class="$style.frame">
-    <slot />
+    <BaseStack>
+      <slot />
+    </BaseStack>
   </div>
 </template>
 
 <style module>
 .frame {
   width: 18rem;
-  height: 30rem;
-  border: 1px solid var(--color-near-white);
+  height: 28rem;
+  border: 2px solid var(--color-near-black);
   padding: 1rem;
 }
 </style>
